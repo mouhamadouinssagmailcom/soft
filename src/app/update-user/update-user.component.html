@@ -1,0 +1,57 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1 .0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+
+<div class="wrapper bg-white">
+  <div class="h2 text-center">NIIT</div>
+  <div class="h2 text-center">LTD-Informatique</div>
+  <div class="h5 font-weight-bold">Registration</div>
+  <div class="text-muted">Enter your registration details</div>
+
+  <form (ngSubmit)="onSubmit()" class="form-signin" autocomplete="off">
+
+    <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
+      <div class="form-group"><label class="text-muted mandatory">Username</label> <input type="text"
+                                                                                      [(ngModel)]="user.username"
+                                                                                      name="username" required
+                                                                                      class="form-control">
+      </div>
+      <div class="form-group"><label class="text-muted mandatory">Password </label> <input type="text"
+                                                                                           [(ngModel)]="user.password"
+
+                                                                                           name="password"
+                                                                                           required
+                                                                                           class="form-control">
+      </div>
+    </div>
+    <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
+      <div class="form-group">
+        <div><label class="text-muted mandatory"></label></div>
+        <div class="form-group"><label class="text-muted"></label> </div>
+
+      </div>
+      <div class="form-group"><label class="text-muted"></label> </div>
+    </div>
+    <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
+      <div class="form-group"><label class="text-muted mandatory">My Email</label> <input type="text" name="email"
+                                                                                          [(ngModel)]="user.email"
+
+                                                                                          required
+                                                                                          class="form-control">
+      </div>
+      <div class="form-group"><label class="text-muted"></label> </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-sm-end button-section">
+      <button class="btn btn-primary mx-4" type="submit">Submit</button>
+      <button class="btn">Cancel</button>
+    </div>
+  </form>
+</div>
+</body>
+
